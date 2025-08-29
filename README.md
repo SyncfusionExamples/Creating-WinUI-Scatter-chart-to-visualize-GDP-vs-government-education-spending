@@ -40,10 +40,10 @@ Enhances interactivity and user control.
 
 ## Use Cases
 
-**Policy Analysis:** Compare education priorities across countries.
-**Economic Research:** Study correlations between GDP and education investment.
-**Education Planning:** Identify regions needing more support.
-**Data Journalism:** Tell compelling stories with visual data.
+**1. Policy Analysis:** Compare education priorities across countries.
+**2. Economic Research:** Study correlations between GDP and education investment.
+**3. Education Planning:** Identify regions needing more support.
+**4. Data Journalism:** Tell compelling stories with visual data.
 
 ## Output
 
