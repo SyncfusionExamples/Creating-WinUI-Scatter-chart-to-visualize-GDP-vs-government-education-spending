@@ -1,6 +1,6 @@
 # Visualizing GDP and Government Education Spending with Syncfusion WinUI Charts
 
-This example showcases how to build an interactive Scatter Chart visualization using Syncfusion WinUI controls to explore the relationship between a country’s GDP spent on education and the share of government spending allocated to education.
+This example showcases how to build an interactive Scatter Chart visualization using Syncfusion WinUI controls to explore the relationship between a countryâ€™s GDP spent on education and the share of government spending allocated to education.
 By integrating real-time filtering through a year-based slider, the chart enables users to examine trends across regions and time, helping uncover patterns, priorities, and disparities in education investment.
 
 ## Key Features
@@ -13,8 +13,8 @@ Supports multiple series for regions like Asia, Europe, Africa, etc.
 
 **2. Year-Based Filtering:**
 
-A Syncfusion WinUI Slider allows users to select a year (2000–2024).
-Chart updates dynamically to reflect selected year’s data.
+A Syncfusion WinUI Slider allows users to select a year (2000â€“2024).
+Chart updates dynamically to reflect selected yearâ€™s data.
 
 **3. Custom Styling:**
 
@@ -47,7 +47,7 @@ Enhances interactivity and user control.
 
 ## Output
 
-
+![Scatter_series_blog_demo](https://github.com/user-attachments/assets/f381bb03-1bc4-4c62-a3fd-1c2f34f5fc58)
 
 ## Troubleshooting
 
