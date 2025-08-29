@@ -12,7 +12,7 @@
 
     <Border Padding="3" 
          Margin="5" 
-         Background="#FFFBD5">
+         Background="#F8F9FA">
 
         <Grid x:Name="MainChart">
             <Grid.RowDefinitions>
@@ -43,7 +43,7 @@
 
                 <!-- Chart Resources -->
                 <chart:SfCartesianChart.Resources>
-                    
+
                     <Style TargetType="Line" x:Key="xDashedGridLineStyle">
                         <Setter Property="Stroke" Value="Black"/>
                         <Setter Property="StrokeThickness" Value="1"/>
@@ -73,16 +73,6 @@
                        Margin="3"/>
                     </DataTemplate>
 
-                    <!-- Legend Header Template -->
-                    <DataTemplate x:Key="legendHeader">
-                        <TextBlock Text="Education Spending by Region"
-                       HorizontalAlignment="Left"
-                       TextWrapping="Wrap"
-                       FontSize="15"
-                       FontWeight="Bold"
-                       Margin="5,0,5,0"/>
-                    </DataTemplate>
-
                     <!-- Tooltip Template -->
                     <DataTemplate x:Key="customTooltipTemplate">
                         <StackPanel Background="Black" MaxWidth="180" Padding="5">
@@ -97,7 +87,7 @@
                               X2="1"
                               Stroke="White"
                               StrokeThickness="1"
-                              Margin="0,0,0,0"/>
+                              Margin="0,2,0,2"/>
                             <!-- GDP Spent -->
 
                             <TextBlock FontSize="12" FontWeight="SemiBold" Foreground="White" Margin="0,2,0,2">
@@ -105,13 +95,13 @@
                                 <Run Text="{Binding Item.GDPSpent, Converter={StaticResource RoundConverter}}" />
                                 <Run Text="%" />
                             </TextBlock>
-                            
+
                             <!-- Government Spending -->
 
                             <TextBlock FontSize="12" FontWeight="SemiBold" Foreground="White" Margin="0,2,0,2">
                                 <Run Text="Govt Spending Share : " />
                                 <Run Text="{Binding Item.GovtSpent, Converter={StaticResource RoundConverter}}" />
-                                <Run Text="%" /> 
+                                <Run Text="%" />
                             </TextBlock>
 
                         </StackPanel>
@@ -148,7 +138,7 @@
 
                 <!-- Legend -->
                 <chart:SfCartesianChart.Legend>
-                    <chart:ChartLegend Placement="Right" ItemMargin="5,0,0,0"
+                    <chart:ChartLegend Placement="Right" ItemMargin="50,0,0,0"
                            ToggleSeriesVisibility="True">
                         <chart:ChartLegend.Header>
                             <TextBlock Text="Education Spending by Region"
@@ -157,17 +147,17 @@
                                 FontWeight="Bold"/>
                         </chart:ChartLegend.Header>
                     </chart:ChartLegend>
-                           
+
                 </chart:SfCartesianChart.Legend>
 
                 <!-- Series -->
                 <chart:SfCartesianChart.Series>
-                    <chart:ScatterSeries ItemsSource="{Binding AsiaData}" XBindingPath="GDPSpent" YBindingPath="GovtSpent" PointHeight="13" PointWidth="13" LegendIcon="Rectangle" Label="Asia" EnableTooltip="True" TooltipTemplate="{StaticResource customTooltipTemplate}" Fill="#2B6063"/>
-                    <chart:ScatterSeries ItemsSource="{Binding NorthAmericaData}" XBindingPath="GDPSpent" YBindingPath="GovtSpent" PointHeight="13" PointWidth="13" LegendIcon="Rectangle" Label="NorthAmerica" EnableTooltip="True" TooltipTemplate="{StaticResource customTooltipTemplate}" Fill="#E7B3E2"/>
-                    <chart:ScatterSeries ItemsSource="{Binding SouthAmericaData}" XBindingPath="GDPSpent" YBindingPath="GovtSpent" PointHeight="13" PointWidth="13" LegendIcon="Rectangle" Label="SouthAmerica" EnableTooltip="True" TooltipTemplate="{StaticResource customTooltipTemplate}" Fill="#449472"/>
-                    <chart:ScatterSeries ItemsSource="{Binding AfricaData}" XBindingPath="GDPSpent" YBindingPath="GovtSpent" PointHeight="13" PointWidth="13" LegendIcon="Rectangle" Label="Africa" EnableTooltip="True" TooltipTemplate="{StaticResource customTooltipTemplate}" Fill="#E1C86E"/>
-                    <chart:ScatterSeries ItemsSource="{Binding EuropeData}" XBindingPath="GDPSpent" YBindingPath="GovtSpent" PointHeight="13" PointWidth="13" LegendIcon="Rectangle" Label="Europe" EnableTooltip="True" TooltipTemplate="{StaticResource customTooltipTemplate}" Fill="#9C5F2D"/>
-                    <chart:ScatterSeries ItemsSource="{Binding OceaniaData}" XBindingPath="GDPSpent" YBindingPath="GovtSpent" PointHeight="13" PointWidth="13" LegendIcon="Rectangle" Label="Oceania" EnableTooltip="True" TooltipTemplate="{StaticResource customTooltipTemplate}" Fill="#F59B7A"/>
+                    <chart:ScatterSeries ItemsSource="{Binding AsiaData}" XBindingPath="GDPSpent" YBindingPath="GovtSpent" PointHeight="13" PointWidth="13" LegendIcon="Rectangle" Label="Asia" EnableTooltip="True" TooltipTemplate="{StaticResource customTooltipTemplate}" Fill="#16A085"/>
+                    <chart:ScatterSeries ItemsSource="{Binding NorthAmericaData}" XBindingPath="GDPSpent" YBindingPath="GovtSpent" PointHeight="13" PointWidth="13" LegendIcon="Rectangle" Label="NorthAmerica" EnableTooltip="True" TooltipTemplate="{StaticResource customTooltipTemplate}" Fill="#8E44AD"/>
+                    <chart:ScatterSeries ItemsSource="{Binding SouthAmericaData}" XBindingPath="GDPSpent" YBindingPath="GovtSpent" PointHeight="13" PointWidth="13" LegendIcon="Rectangle" Label="SouthAmerica" EnableTooltip="True" TooltipTemplate="{StaticResource customTooltipTemplate}" Fill="#8E2B2B"/>
+                    <chart:ScatterSeries ItemsSource="{Binding AfricaData}" XBindingPath="GDPSpent" YBindingPath="GovtSpent" PointHeight="13" PointWidth="13" LegendIcon="Rectangle" Label="Africa" EnableTooltip="True" TooltipTemplate="{StaticResource customTooltipTemplate}" Fill="#E74C3C"/>
+                    <chart:ScatterSeries ItemsSource="{Binding EuropeData}" XBindingPath="GDPSpent" YBindingPath="GovtSpent" PointHeight="13" PointWidth="13" LegendIcon="Rectangle" Label="Europe" EnableTooltip="True" TooltipTemplate="{StaticResource customTooltipTemplate}" Fill="#2980B9"/>
+                    <chart:ScatterSeries ItemsSource="{Binding OceaniaData}" XBindingPath="GDPSpent" YBindingPath="GovtSpent" PointHeight="13" PointWidth="13" LegendIcon="Rectangle" Label="Oceania" EnableTooltip="True" TooltipTemplate="{StaticResource customTooltipTemplate}" Fill="#1ABC9C"/>
                 </chart:SfCartesianChart.Series>
 
             </chart:SfCartesianChart>
