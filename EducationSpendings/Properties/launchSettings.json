@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "EducationSpendings (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "EducationSpendings (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
