@@ -13,10 +13,11 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
-    <Content Remove="Assets\financial-literacy.png" />
+    <Content Remove="Assets\education_spendings.csv" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Assets\education_spendings.csv" />
+    <None Remove="Assets\financial-literacy.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -27,6 +28,10 @@
     <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <Content Include="Assets\StoreLogo.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\education_spendings.csv" />
   </ItemGroup>
 
   <ItemGroup>
