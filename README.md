@@ -58,4 +58,4 @@ Enhances interactivity and user control.
 
 If you are facing a path too long exception when building this example project, close Visual Studio and rename the repository to short and build the project.
 
-For a step-by-step procedure, refer to the [GDP and Government Education Spending]().
+For a step-by-step procedure, refer to the [GDP and Government Education Spending](https://www.syncfusion.com/blogs/post/winui-scatter-chart-education-gdp).
